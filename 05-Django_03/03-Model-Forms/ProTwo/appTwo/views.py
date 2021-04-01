@@ -5,8 +5,8 @@ def index(request):
     return render(request,'appTwo/index.html')
 
 def help(request):
-    helpdict = {'help_insert':'HELP PAGE'}
-    return render(request,'appTwo/help.html',context=helpdict)
+    helpdict = {'help_insert': 'HELP PAGE'}
+    return render(request,'appTwo/help.html', context=helpdict)
 
 def users(request):
     form = NewUserForm()
